@@ -1,4 +1,5 @@
-#week one homework assignment
+#Dublin Apps
 
-Take the final project from another class and upload onto github via the terminal. 
-AKA: Push up the final onto the github repo. 
+Build out a three page website for Dublin Apps.
+Use Javascript features to animate out at your discretion. 
+Make it responsive if you have time. 

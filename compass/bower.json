@@ -1,0 +1,10 @@
+{
+  "name": "compass",
+  "version": "0.0.0",
+  "dependencies": {
+    "modernizr": "~2.7.1",
+    "jquery": "~2.0.3",
+    "inuit-starter-kit": "~0.2.7"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,175 @@
+// Main Styles
+
+@import "variables";
+@import "imports";
+
+
+@mixin box {
+	box-shadow: 0 3px 30px rgba(0,0,0,0.8);
+}
+@mixin basicColor {
+	color: #ffc501;
+}
+@mixin background-color {
+	background-color: #fff9cd;
+}
+@mixin transition($time) {
+	-webkit-transition-delay: $time;
+	transition-delay: $time;
+}
+$font-stack:    'Raleway', sans-serif;
+$color: 		#2d434e;
+
+.page { 
+	padding-top: 24px; 
+	padding-bottom: 24px; 
+	@include background-color;
+}
+
+.wrapper { 
+	max-width: 980px; 
+	margin: 0 auto; 
+}
+/*body {
+	font-family: $font-stack;
+	font-family: 'Raleway', sans-serif;
+}*/
+
+.fontGrouping1 {
+	font: {
+		family: 'Raleway', sans-serif;
+		size: 30px;
+	}
+}
+
+
+/*// navigation*/
+header{
+	width: 100%;
+	text-align: center;
+	font-weight: 400;
+}
+nav {
+	color: $color;
+	ul {
+	list-style: none;
+	}
+	li {
+		display: inline-block;
+		font-size: 18px;
+		margin: 0 80px; 
+	}
+	a {
+		text-decoration: none;
+	}
+}
+
+nav ul {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+nav li {
+	display: inline-block;
+	font-size: 18px;
+	margin: 0 20px; 
+}
+nav a {
+	color: $color;
+	color: #2d434e;
+	text-decoration: none;
+}
+
+h1 {
+	font-weight: 800;
+	margin: 0 4em;
+	text-align: center;
+	padding: 1em;
+	border-bottom: 4px solid black;
+	/*color: $font-color;*/
+}
+h3 {
+	font-weight: 200;
+	font-size: 15px;
+}
+
+.container {
+	@extend %clearfix;
+}
+
+
+/* Media queries */
+@media screen and (max-width: 50em) {
+	.content {
+		padding: 0 10px;
+		text-align: center;
+	}
+	.grid figure {
+		display: inline-block;
+		float: none;
+		margin: 10px auto;
+		width: 100%;
+	}
+}
+
+.spread img {
+	width: 100%;
+}
+
+
+
+/*some tests*/
+section {  
+    width: 500px;  
+    margin: 50px auto 0;  
+    div {  
+        width: 250px;  
+        height: 250px;  
+        background-color: #ccc;  
+        margin: 0 auto;  
+        @include border-radius;  
+        @include rotate; 
+    }  
+}  
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+section a {
+  color: gray;
+  @include transition(color .3s ease);
+  &:hover {
+    color: black;
+  }
+}
+/*===========================================*/
+.clearfix:after {
+  clear: both;
+  display: table;
+  content: '';
+  font-size: 0;
+}
+/*===========================================*/
+%clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+/*Resources*/
+/*
+http://www.sitepoint.com/sass-mixin-placeholder/
+http://www.hongkiat.com/blog/saas-compass/
+http://thesassway.com/beginner
+-BEST - http://zerosixthree.se/8-sass-mixins-you-must-have-in-your-toolbox/
+*/

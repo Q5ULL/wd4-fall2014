@@ -1,0 +1,380 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; 
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	height: 100%; /*Dakota*/
+	padding: 0;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+}
+
+/*things*/
+.arrow {
+	display: block;
+}
+.center {
+	text-align: center;
+}
+.contain {
+	max-width: 70%;
+	margin: 0 auto;
+}
+.section_header {
+	border-top: 1px dashed black;
+	border-bottom: 1px dashed black;
+	text-align: center;
+	margin: 2em auto; /*is this right*/
+	padding-bottom: 2.625em;
+	position: relative;
+}
+a {
+	text-decoration: none;
+}
+
+/* Menu */
+
+.sticky_nav {
+	background-color: #202020;
+	color: #fff;
+	text-align: center;
+	padding: 18px 0;
+	margin-bottom: 30px;
+	width: 100%;
+	z-index: 999;
+}
+
+.navigator {
+	position: relative;
+}
+
+nav ul li {
+	display: inline;
+	border-right: 1px dashed white;
+	padding: 18px 0;
+}
+
+nav ul li a {
+	color: #FFF;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 1.125em;
+	padding: 0 3%;
+	-webkit-transition: .5s ease;
+	   -moz-transition: .5s ease;
+	    -ms-transition: .5s ease;
+	     -o-transition: .5s ease;
+	        transition: .5s ease;
+}
+
+#sticky_nav ul li a:hover {
+	color: #f4614c;
+}
+
+.lefty {
+	border-left: 1px dashed white;
+	padding: 18px 0;
+}
+#special {
+	width: 30px;
+}
+
+
+
+/*Images*/
+.fullImg {
+	width: 100%;
+}
+.imgHolder {
+	position: relative;
+}
+#logo {
+	position: absolute;
+	left: 42.1%;
+	bottom: -50px;
+	z-index: 5;
+}
+/*Top*/
+.bgcMint {
+	background-color: #9dcaab;
+}
+.bgc1 {
+	background-color: #f3614b;
+	min-height: 307px;
+	padding: 35px 0;
+}
+.bgc2 {
+	background-color: #202020;
+	position: relative;
+}
+
+/*workPortfolio*/
+.portWork {
+	margin-top: 2.188em;
+}
+
+/*Blog == also used for other sections*/
+.blog {
+	position: relative;
+	min-height: 50%;
+}
+.left_half {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.blog .tophalf {
+	float: right;
+	margin-left: 50px;
+}
+
+/*Map*/
+.map_title {
+	font-size: 15px;
+	color: #469cae;
+}
+.addr {
+	font-size: 8px;
+}
+.name {
+	font-size: 1em;
+	text-decoration: none;
+	color: black;
+}
+.maps {
+	padding-bottom: 35px;
+}
+
+/*contact*/
+.contact .col1_2 a {
+	float: left;
+}
+.contact .col2_2 a {
+	float: right;
+	text-align: right;
+}
+.contact_form {
+	background-color: #FFF;
+	padding: 1em;
+	margin: 1%;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	position: relative;
+}
+	.contact_form h1{
+		font-style: italic;
+	}
+.question {
+	padding-top: 15%;
+}
+	.question h2 {
+		font-style: italic;
+		font-size: 10px;
+		text-align: center;
+	}
+form {
+	float: left;
+}
+#submit {
+	float: left;
+}
+.wide {
+	width: 100%;
+	text-align: center;
+}
+/*Hovers*/
+.col1_3 a:hover,
+.col2_3 a:hover, 
+.col3_3 a:hover { 
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);f
+	filter: url(grayscale.svg); /* Firefox 4+ */
+	filter: gray; /* IE 6-9 */
+}
+
+/*Type*/
+.port_text {
+	background-color: #f9fafa;
+	padding: 6% 3.5%;
+}
+.blog_titler {
+	font-size: 2em;
+	color: #3694A7;
+	margin-bottom: 1em;
+	margin-top: 0;
+}
+.blog_paragraph {
+	font-size: .875em;
+	font-weight: 300;
+	line-height: 28px;
+	margin-bottom: 2.125em;
+}
+.section_title {
+	font-size: 3em;
+	margin: 3% 0;
+	width: 100%;
+}
+.article_title {
+	font-size: 1.5em;
+	color: #004a59;
+}
+.orange {
+	color: #FF6146;
+	font-weight: 700;
+}
+.white {
+	color: #fff;
+}
+.recent_articles {
+	font-size: 12px;
+}
+.social {
+	font-size: .75em;
+	font-weight: bold;
+	line-height: 36px;
+	color: #000;
+}
+.upper {
+	text-transform: uppercase;
+}
+.gills {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-weight: 500;
+}
+
+.neue {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*FOoter*/
+.footer footer {
+	background-color: #202020;
+	padding: 1.2em 0;
+	border-bottom: 5px solid black;
+}
+.footer h2 {
+	font-size: .875em;
+	float: left;
+	color: #918680;
+	position: absolute;
+}
+
+.ampersand {
+	font-size: 2.25em;
+	position: relative;
+	top: 5px;
+}
+
+/*columns/grids*/
+.col1_3,
+.col2_3, 
+.col3_3 {
+	width: 30%;
+	margin: 0 1.5%;
+	display: inline-block;
+	float: left;
+}
+.colbig_2 {
+	width: 62%;
+}
+.col1_2, 
+.col2_2 {
+	width: 49%;
+	float: left;
+	display: inline-block;
+}
+
+
+/*pulls*/
+.pull_left {
+	float: left;
+}
+.pull_right {
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*NOTES*/
+/*
+width: 1090px;
+actual window: 1600px;
+left/righ padding: 8px;
+padding bw columns: 35px;
+padding top/bottom within cols: 30px;
+image size: 337x230;
+recent Articles Columns: 55px;
+recent articles img:306px;
+
+Header Color: #f3614b;
+menu: #202020;
+mtv: 9dcaab;
+copy: 80726b;
+3 column - first h2: 004a59;
+bgc on hover: f9fafa;
+
+News titles: 3694a7;
+BLog titles: 004a59;
+blog copy: 858181;
+
+About - main: ff6146;
+Arrow/submit button: ffce0f;
+
+Footer: 202020;
+Footer Text: 918680;
+
+body background - f9fafa;
+*/
+/*
+Assignment: Assignment: Porky Pig Web site
+Due: October 15, 2014
+Build out HTML / CSS / JavaScript for the Porky Pig web site.   
+ 
+Think about reusable modular CSS. keep it DRY.... (don't repeat yourself)   
+ 
+The finished product has some JS functionality as well:
+ 1. sticky navigation when the nav bar has scrolled to the top of the page
+ 2. Linked scrolling: the appropriate nav link item is selected as the user scrolls to that section of the page.
+3. Animated scrollTo - when the user clicks a link in the nav bar, it animates the scroll to that page bookmark.   
+ 
+If you did not take Web Dev 3 yet, don't worry about the JS part. You're off the hook.   
+ 
+A gentle nudge.... the JS plugins to get you going are : jquery scrollTo and jquery viewport.   
+ 
+Push this to your ftp space and send me a functional url by Wed at 6pm.   
+ 
+Thanks.
+
+*/

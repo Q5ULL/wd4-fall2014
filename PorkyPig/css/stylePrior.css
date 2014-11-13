@@ -1,0 +1,178 @@
+* {
+	box-sizing: border-box;
+	/*pushes the border to the inside of the "box"*/
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.clearfix:after {
+  clear: both;
+  display: table;
+  content: '';
+  font-size: 0;
+}
+body {
+	font-family: 'Lato', sans-serif;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.center {
+	width: 1090px;
+	margin: 0 auto;
+	padding: 0 8px;
+}
+.row {
+	text-align: center;
+	display: block;
+	clear: both;
+	padding-top: 35px;
+}
+/*colors*/
+.bgc1 {
+	background-color: #f3614b;
+	height: 307px;
+	padding: 35px 0;
+}
+.bgc2 {
+	background-color: #202020;
+	text-align: center;
+	height: 80px;
+}
+.bgc3 {
+	background-color: #9dcaab;
+}
+
+/*part 1*/
+.logo img {
+	width: 174px;
+	height: 223px;
+}
+.logo {
+	text-align: center;
+}
+
+/*part 2*/
+nav li {
+	text-decoration: none;
+	display: inline-block;
+}
+nav img {
+	width: 89px;
+	height: 75px;
+}
+nav li a {
+	color: #fff;
+	display: block;
+	line-height: 2.75em;
+	text-decoration: none;
+	padding-left: 1em;
+}
+
+/*part 3*/
+.greenMtv {
+	min-height: 591px;
+}
+.greenMtv .col1_2 img {
+	width: 60%;
+	padding-top: 100px;
+}
+.arrow {
+	display: block;
+}
+
+
+
+/*columns*/
+.col1_3,
+.col2_3, 
+.col3_3 {
+	width: 33.3%;
+	float: left;
+}
+.colbig_2 {
+	width: 62%;
+}
+.col1_2, 
+.col2_2 {
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+
+
+/*pulls*/
+.pull_left {
+	float: left;
+}
+.pull_right {
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*NOTES*/
+/*
+width: 1090px;
+actual window: 1600px;
+left/righ padding: 8px;
+padding bw columns: 35px;
+padding top/bottom within cols: 30px;
+image size: 337x230;
+recent Articles Columns: 55px;
+recent articles img:306px;
+
+Header Color: #f3614b;
+menu: #202020;
+mtv: 9dcaab;
+copy: 80726b;
+3 column - first h2: 004a59;
+bgc on hover: f9fafa;
+
+News titles: 3694a7;
+BLog titles: 004a59;
+blog copy: 858181;
+
+About - main: ff6146;
+Arrow/submit button: ffce0f;
+
+Footer: 202020;
+Footer Text: 918680;
+
+body background - f9fafa;
+*/
+/*
+Assignment: Assignment: Porky Pig Web site
+Due: October 15, 2014
+Build out HTML / CSS / JavaScript for the Porky Pig web site.   
+ 
+Think about reusable modular CSS. keep it DRY.... (don't repeat yourself)   
+ 
+The finished product has some JS functionality as well:
+ 1. sticky navigation when the nav bar has scrolled to the top of the page
+ 2. Linked scrolling: the appropriate nav link item is selected as the user scrolls to that section of the page.
+3. Animated scrollTo - when the user clicks a link in the nav bar, it animates the scroll to that page bookmark.   
+ 
+If you did not take Web Dev 3 yet, don't worry about the JS part. You're off the hook.   
+ 
+A gentle nudge.... the JS plugins to get you going are : jquery scrollTo and jquery viewport.   
+ 
+Push this to your ftp space and send me a functional url by Wed at 6pm.   
+ 
+Thanks.
+
+*/

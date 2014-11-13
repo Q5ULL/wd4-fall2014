@@ -14,7 +14,7 @@
 	-webkit-transition-delay: $time;
 	transition-delay: $time;
 }
-$font-stack:    'Raleway', sans-serif;
+$font-stack:   'Raleway', sans-serif;
 $color: 		#2d434e;
 
 .page { 
@@ -29,7 +29,7 @@ $color: 		#2d434e;
 }
 body {
 	font-family: $font-stack;
-	font-family: 'Raleway', sans-serif;
+	// font-family: 'Raleway', sans-serif;
 }
 /*// navigation*/
 header{
@@ -49,24 +49,25 @@ nav {
 	}
 	a {
 		text-decoration: none;
+		color: $color;
 	}
 }
 
-nav ul {
-	list-style: none;
-	text-align: center;
-	padding: 0;
-}
-nav li {
-	display: inline-block;
-	font-size: 18px;
-	margin: 0 80px; 
-}
-nav a {
-	color: $color;
-	color: #2d434e;
-	text-decoration: none;
-}
+// nav ul {
+// 	list-style: none;
+// 	text-align: center;
+// 	padding: 0;
+// }
+// nav li {
+// 	display: inline-block;
+// 	font-size: 18px;
+// 	margin: 0 80px; 
+// }
+// nav a {
+// 	color: $color;
+// 	color: #2d434e;
+// 	text-decoration: none;
+// }
 
 h1 {
 	font-weight: 800;
@@ -159,7 +160,6 @@ h3 {
 	font-weight: 800;
 }
 .grid figure p {
-	@extend .noMargin;
 	letter-spacing: 1px;
 	font-size: 68.5%;
 }
@@ -368,7 +368,6 @@ footer a:hover {
 .contactInfo h2 {
 	word-spacing: -0.15em;
 	font-weight: 300;
-	@extend .noMargin;
 	@extend .transition;
 }
 .contactInfo:hover h2 {

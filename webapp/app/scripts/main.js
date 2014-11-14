@@ -1,7 +1,10 @@
 console.log('\'Allo \'Allo!');
 
 $(document).on('ready', function() {
+
 	'use strict';
+
+	$('.carousel').carousel();
 	console.log('meep meep');
 
 	var items = ['green', 'yellow', 'blue'];
@@ -13,9 +16,9 @@ $(document).on('ready', function() {
 
 	var colors = _.filter(items, function(item) {
 		return item === 'green';
-	})
+	});
 	console.log(colors);
 
 
-})
+});
 

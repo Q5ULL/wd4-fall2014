@@ -122,9 +122,20 @@ $brand-success: #ff9712;
 .logo{
   text-align: center;
 }
+.thumb {
+  width: 100px;
+  margin: 0 1em;  
+}
+.thumbnails {
+  padding-top: 1em;
+  text-align: center;
+}
 @media screen and (max-width: 768px) {
   .logo img {
     max-width: 40%;
+  }
+  .thumbnails {
+    display: none;
   }
 }
 .menuActive {

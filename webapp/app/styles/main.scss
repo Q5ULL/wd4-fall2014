@@ -14,6 +14,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: #fff9cd;
 }
 
 // set up color variables
@@ -40,7 +41,8 @@ $brand-success: #ff9712;
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 3px solid #000;
+  text-align: center;
 
   /* Make the masthead heading the same height as the navigation */
   h3 {
@@ -103,4 +105,28 @@ $brand-success: #ff9712;
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+/*=========CUSTOM=========*/
+.navbar {
+  min-height: 0;
+  background-color: transparent;
+}
+.navbar-default {
+  border: 0px;
+}
+.navbar-collapse {
+  padding-right: 0;
+  padding-left: 0;
+}
+.logo{
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .logo img {
+    max-width: 40%;
+  }
+}
+.menuActive {
+  background-color: #fff;
 }

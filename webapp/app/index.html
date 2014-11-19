@@ -2,7 +2,7 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>webapp</title>
+    <title>Cafe Jonah - Final Project</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="/favicon.ico">
@@ -12,6 +12,7 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
+    <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -28,7 +29,7 @@
     <div class="container">
 
       <div class="menu">
-        <nav class="navbar navbar-default" role="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -43,9 +44,8 @@
           <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav nav-pills nav-justified">
               <li class="menuActive"><a href="#" >Home</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
+              <li><a href="#attic">The Attic</a></li>
+              <li><a href="#brunch">Sunday Brunch</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </nav>
@@ -56,7 +56,7 @@
 
 <!-- CAROUSEL -->
   <div class="wrap">
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" id="carousel1">
          <!-- Indicators -->
           <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -110,13 +110,151 @@
       </div>
     </div>
 <!-- end carousel -->
+<div class="mainInfo">
+        <div class="page-header">
+            <h1>Our Story</h1>
+        </div>
+        <div class="media">
+          <a class="media-left" href="#">
+            <img src="images/inside.jpg" alt="inside">
+          </a>
+          <div class="media-right">
+                <p>Cafe Jonah and the Magical Attic is a combination of all the things I love. Fresh food, a warm and comfortable surrounding and a friendly staff… With a little bit of fun and surprise thrown in! I have enjoyed watching Souper Jenny grow and thrive over the years, and I'm delighted to offer another special place here in Atlanta.</p>
+                <p>I named Cafe Jonah after my son, simply because he asked. I want him to know the community he lives in and to learn about food, service and what his Mommy does in a warm environment.</p>
+          </div>
 
-
-
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-star-empty"></span> Cafe Jonah</p>
-      </div>
+        </div>
+        <div class="major">
+            <h2>Cafe Jonah is open year round and is the perfect spot for a great coffee, a fabulous pastry or grilled breakfast sandwich. It's a relaxed spot for lunch or a latte with a friend.</h2>
+            <img src="images/jenny_sig.png" alt="jenny signature">
+        </div>
     </div>
+    <div class="footer">
+        <p class="p1"></p>
+        <p class="p2"></p>
+    </div>
+  </div>
+  <!-- THE ATTIC -->
+  <div class="container" id="attic">
+        <div class="page-header">
+            <h1>The Attic</h1>
+        </div>
+        <div class="imgHeader">
+            <img src="images/attic.jpg" alt="The Attic">
+        </div>
+        <section class="row clearfix">
+            <div class="astrology pull-left">
+                <h2>Astrology and the Mystical</h2>
+                <p>Experience a psychic reading with one of our readers. Find your inner spirit and let it free!</p>
+                <p>We have psychic fairs once a month, or come visit with our House Astrologer, Sheila Wolstien.</p>
+            </div>
+            <div class="read pull-right">
+                <h2>Read and Relax</h2>
+                <p>Step upstairs and discover a hidden gem in Buckhead.</p>
+                <p>Sip a cup of tea or a hand-crafter cappuccino and relax on the big sofa with a book. </p>
+                <p>Here, you will find inspiration to motivate you to look towards the future!</p>
+            </div>
+        </section>
+        <div class="footer">
+            <p class="p1"></p>
+            <p class="p2"></p>
+        </div>
+
+    </div>
+    <!-- SUNDAY BRUNCH -->
+    <div class="container" id="brunch">
+        <div class="page-header">
+            <h1>Sunday Brunch</h1>
+        </div>
+        <div class="wrap">
+            <div id="carousel-example-generic1" class="carousel slide sunday" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic1" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic1" data-slide-to="2"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="images/brunch2.png" alt="brunch yo">
+                  <div class="carousel-caption">
+                    <h3>Delicious Brunch Offerings</h3>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="images/sandwich2.png" alt="Brunchy brunch brunch">
+                  <div class="carousel-caption">
+                    <h3>Look at that delicious sandwich</h3>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="images/yum2.png" alt="look at that biscuit with jam and butter">
+                  <div class="carousel-caption">
+                    <h3>A variety of offerings for every palate</h3>
+                  </div>
+                </div>
+                
+              </div>
+
+              <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-example-generic1" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic1" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+        </div>
+        <!-- end carousel -->
+        <div class="bufOptions">
+          <!-- Button trigger modal -->
+          <div class="cost" data-toggle="modal" data-target="#myModal">
+              <h2 class="subtitle fancy"><span>Cost</span></h2>
+              <p>Adult: $20</p>
+              <p>Children: $10</p>
+              <p>Under 3: Free</p>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Some Sundays are "pay what you want" SHHH!</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="opCover">
+            <p>Bagels, Biscuits, Croissants, Sweet Potato Biscuits, Fruit Tarts</p>
+            <p><span class="glyphicon glyphicon-minus"></span></p>
+            <p>Steel Cut Oatmeal with Gogi, Flax, Chia, Cinnamon, Vanilla, Honey</p>
+            <p><span class="glyphicon glyphicon-minus"></span></p>
+            <p>Grilled Organic Chicken Salad made with Greek Yogurt</p>
+            <p><span class="glyphicon glyphicon-minus"></span></p>
+            <p>Cinnamon Grilled Peaches with Feta Cheese, Arugula, Toasted Walnuts</p>
+            <p><span class="glyphicon glyphicon-minus"></span></p>
+            <p>Roasted Vegetable Frittata with House Made Tomato Sauce</p>
+            <p><span class="glyphicon glyphicon-minus"></span></p>
+            <p>And SOOOO much more...</p>
+          </div>
+        </div>
+        <div class="footer">
+            <p class="p1">Cafe Jonah - Atlanta, GA</p>
+            <p class="p2">
+              <span class="glyphicon glyphicon-copyright-mark"></span>
+              <span class="glyphicon glyphicon-heart-empty"></span>
+              <span class="glyphicon glyphicon-thumbs-up"></span>
+            </p>
+        </div>
+    </div>
+
 
 
     <!-- build:js(.) scripts/vendor.js -->

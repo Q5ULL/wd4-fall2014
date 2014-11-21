@@ -1,0 +1,118 @@
+<!doctype html>
+<html class="no-js" data-ng-app="customerApp">
+  <head>
+    <meta charset="utf-8">
+    <title>angularFrm</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+    <div class="container">
+      <h3>Inputs</h3>
+      <form>
+        <fieldset>
+          <label for=""> Name </label>
+          <input type="text" data-ng-model="name">
+          <!-- two different ways to do the same thing -->
+          <!-- way 1 -->
+          <!-- <p>{{name}}</p> -->
+          <!-- way 2 -->
+          <p ng-bind="name"></p>
+          <!-- curly braces evaluate the information input -->
+        </fieldset>
+      </form>
+    </div>
+
+    <!-- Repeaters -->
+
+    <div class="container" data-ng-init="names=['Dave','Wendy','Terry','Cody']">
+      <h3>Looping with ng-repeat</h3>
+      <ul>
+        <li data-ng-repeat="firstName in names" data-ng-bind-template="{{firstName}}"></li>
+      </ul>
+    </div>
+
+    <!-- Filters : like the excel sort -->
+
+    <div class="container" data-ng-init="names=['Dave','Wendy','Terry','Cody']">
+      <h3>Using Filters - Filtering out last one AND Making them uppercase</h3>
+      <ul>
+        <li data-ng-repeat="firstName in names | limitTo: 3" data-ng-bind-template="{{firstName | uppercase}}"></li>
+      </ul>
+    </div>
+
+    <!-- Mixing both of them in together -->
+    <div class="container" data-ng-init="names=['Dave','Wendy','Terry','Cody']">
+      <h3>Combining filters with inputs - search in inbox for the names in our list</h3>
+      <form>
+        <fieldset>
+          <label for=""> Name </label>
+          <input type="text" data-ng-model="nameText">
+        </fieldset>
+      </form>
+      <ul>
+        <li data-ng-repeat="firstName in names | filter: nameText" data-ng-bind-template="{{firstName}}"></li>
+      </ul>
+    </div> 
+
+    <!-- Controllers -->
+    <div class="container south-park" data-ng-controller="SouthParkController" data-ng-cloak>
+      <h3>Controllers</h3>
+      <!-- using filters and the Date option - organize your date -->
+      <span class="date" ng-bind-template="{{date | date: 'EEEE, MMM. d, yyyy'}}"></span>
+      <figure data-ng-repeat="character in southParkCharacters" data-ng-click="southParkClick(character.quote)">
+        <img data-ng-src="{{character.imgUrl}}">
+        <!-- ng-src is a directive -->
+        <figcaption>
+        <h4 data-ng-bind-template="{{character.name}}"></h4>
+        </figcaption>
+      </figure>
+      <div style="clear:both;"></div>
+      <!-- selectedTExt is a variable you defined in the js -->
+      <!-- you call this here, and when you click (above) it calls the function and does something -->
+      <div class="bubble" data-ng-hide="!selectedText" data-ng-bind-template="{{selectedText}}">
+
+      </div>
+    </div>
+
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
